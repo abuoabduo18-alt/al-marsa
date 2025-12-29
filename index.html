@@ -186,6 +186,20 @@ footer a{
     margin:0 10px;
     text-decoration:none;
 }
+/* ===== NEW: remaining news ===== */
+.more-news{
+    margin-top:40px;
+}
+.more-news h3{
+    color:#003366;
+    margin-bottom:20px;
+}
+.more-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
 </style>
 </head>
 
@@ -249,63 +263,126 @@ moveTicker();
 #ticker a:hover {
     text-decoration:underline;
 }
+/* ===== NEW: FEATURED NEWS ===== */
+.featured-news{
+    margin-bottom:60px;
+}
+.featured-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:20px;
+}
+.featured-main,
+.featured-side{
+    position:relative;
+    border-radius:15px;
+    overflow:hidden;
+}
+.featured-grid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.featured-text{
+    position:absolute;
+    bottom:0;
+    inset-inline:0;
+    background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+    color:white;
+    padding:20px;
+}
+.featured-text h3,
+.featured-text h4{
+    margin:0 0 8px;
+}
+.featured-text span{
+    font-size:14px;
+    opacity:.9;
+}
+
 </style>
 
 <main>
-    <!-- بطاقة الخبر 1 -->
-<div class="card">
-    <img src="images2/article1.jpg" alt="الأردن يستعد لتعداد سكاني شامل عام 2026">
-    <div class="card-content">
-    <h3>الأردن يستعد لتعداد سكاني شامل عام 2026</h3>
-    <p>يستعد الأردن لإجراء تعداد سكاني جديد عام 2026 لتحديث البيانات الديموغرافية والاقتصادية.</p>
-    <p style="font-style:italic; color:#555;"> موفق المغربي</p>
-    <a href="article1.html">قراءة الخبر الكامل ➜</a>
-    </div>
-    </div>
+    <section class="featured-news">
+        <h2 class="section-title">📰 أبرز الأخبار</h2>
+        
+        <div class="featured-grid">
+        <a id="mainLink" class="featured-main">
+            <img id="mainImg">
+            <div class="featured-text">
+                <h3 id="mainTitle"></h3>
+                <span id="mainAuthor"></span>
+            </div>
+        </a>
+        
+        <a id="side1Link" class="featured-side">
+            <img id="side1Img">
+            <div class="featured-text">
+                <h4 id="side1Title"></h4>
+                <span id="side1Author"></span>
+            </div>
+        </a>
+        
+        <a id="side2Link" class="featured-side">
+            <img id="side2Img">
+            <div class="featured-text">
+                <h4 id="side2Title"></h4>
+                <span id="side2Author"></span>
+            </div>
+        </a>
+        </div>
+        </section>
+        <section class="more-news">
+            <h3>🗞️ آخر الأخبار</h3>
+            
+            <div class="more-grid">
+            
+            <div class="card">
+            <img src="images2/article4.jpg">
+            <div class="card-content">
+            <h3>النشامى يثبتون جدارتهم في كأس العرب</h3>
+            <p>المنتخب الأردني يحقق نتائج مميزة.</p>
+            <p style="font-style:italic;color:#555;">موفق المغربي</p>
+            <a href="article4.html">قراءة الخبر ➜</a>
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="images2/article5.jpg">
+            <div class="card-content">
+            <h3>أم الجمال تشق طريقها إلى العالمية</h3>
+            <p>مشاريع محلية ناجحة تجذب الانتباه.</p>
+            <p style="font-style:italic;color:#555;">موفق المغربي</p>
+            <a href="article5.html">قراءة الخبر ➜</a>
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="images2/article6.jpg">
+            <div class="card-content">
+            <h3>مبادرة سبيل مدينة معان</h3>
+            <p>مبادرة شبابية تخدم المجتمع المحلي.</p>
+            <p style="font-style:italic;color:#555;">موفق المغربي</p>
+            <a href="article6.html">قراءة الخبر ➜</a>
+            </div>
+            </div>
+            
+            <div class="card">
+            <img src="images2/article7.jpg">
+            <div class="card-content">
+            <h3>أم غازي تحوّل المعجنات التراثية لنجاح</h3>
+            <p>قصة نجاح ملهمة من التراث.</p>
+            <p style="font-style:italic;color:#555;">موفق المغربي</p>
+            <a href="article7.html">قراءة الخبر ➜</a>
+            </div>
+            </div>
+            
+            </div>
+            </section>
+                    
     
-    <!-- بطاقة الخبر 2 -->
-    <div class="card">
-    <img src="images2/article2.jpg" alt="الأردن يحتضن أول سباق دراغ ريس">
-    <div class="card-content">
-    <h3>الأردن يحتضن أول سباق دراغ ريس رسمي</h3>
-    <p>تستضيف الأردن أول سباق رسمي للدراج ريس بمشاركة محلية وعالمية.</p>
-    <p style="font-style:italic; color:#555;">  موفق المغربي</p>
-    <a href="article2.html">قراءة الخبر الكامل ➜</a>
-    </div>
-    </div>
-    
-    <!-- بطاقة الخبر 3 -->
-    <div class="card">
-    <img src="images2/article3.jpg" alt="الأردن يتصدر السياحة العلاجية">
-    <div class="card-content">
-    <h3>الأردن يتصدر السياحة العلاجية في المنطقة</h3>
-    <p>الأردن يعزز موقعه كوجهة رائدة للسياحة العلاجية والعناية الصحية.</p>
-    <p style="font-style:italic; color:#555;">موفق المغربي</p>
-    <a href="article3.html">قراءة الخبر الكامل ➜</a>
-    </div>
-    </div>
-    
-    <!-- بطاقة الخبر 4 -->
-    <div class="card">
-    <img src="images2/article4.jpg" alt="النشامى في كأس العرب">
-    <div class="card-content">
-    <h3>النشامى يثبتون جدارتهم في كأس العرب</h3>
-    <p>المنتخب الأردني يحقق نتائج مميزة ويبرز مستوى عالي في البطولة.</p>
-    <p style="font-style:italic; color:#555;"> موفق المغربي</p>
-    <a href="article4.html">قراءة الخبر الكامل ➜</a>
-    </div>
-    </div>
-    
-    <!-- بطاقة الخبر 5 -->
-    <div class="card">
-    <img src="images2/article5.jpg" alt="أم الجمال تشق طريقها إلى العالمية">
-    <div class="card-content">
-    <h3>أم الجمال تشق طريقها إلى العالمية</h3>
-    <p>مشاريع محلية ناجحة لأم الجمال تجذب الانتباه على المستوى الدولي.</p>
-    <p style="font-style:italic; color:#555;">  موفق المغربي</p>
-    <a href="article5.html">قراءة الخبر الكامل ➜</a>
-    </div>
-    </div>
+   
 <h2 class="section-title">📌 أقسام الموقع</h2>
 <div class="cards">
 
@@ -346,7 +423,7 @@ moveTicker();
 <footer>
 <a href="index.html">الرئيسية</a>
 <a href="news.html">الأخبار</a>
-<a href="stories.html">تحقيقات وتقارير</a>
+<a href="stories.html">القصص الصحفية</a>
 <a href="sports.html">الرياضة</a>
 <a href="about.html">من نحن</a>
 <a href="contact.html">التواصل</a>
@@ -380,9 +457,42 @@ function updateDateTime() {
 }
 setInterval(updateDateTime,1000);
 updateDateTime();
-</script>
 
+</script>
+<script>
+    const news = [
+     {title:"الأردن يستعد لتعداد سكاني شامل عام 2026", img:"images2/article1.jpg", link:"article1.html"},
+     {title:"الأردن يحتضن أول سباق دراغ ريس رسمي", img:"images2/article2.jpg", link:"article2.html"},
+     {title:"الأردن يتصدر السياحة العلاجية في المنطقة", img:"images2/article3.jpg", link:"article3.html"},
+     {title:"النشامى يثبتون جدارتهم في كأس العرب", img:"images2/article4.jpg", link:"article4.html"},
+     {title:"أم الجمال تشق طريقها إلى العالمية", img:"images2/article5.jpg", link:"article5.html"},
+     {title:"مبادرة سبيل مدينة معان", img:"images2/article6.jpg", link:"article6.html"},
+     {title:"أم غازي تحوّل المعجنات التراثية لنجاح", img:"images2/article7.jpg", link:"article7.html"}
+    ];
+    
+    let index = 0;
+    
+    function rotateNews(){
+     document.getElementById("mainImg").src = news[index % news.length].img;
+     document.getElementById("mainTitle").textContent = news[index % news.length].title;
+     document.getElementById("mainLink").href = news[index % news.length].link;
+     document.getElementById("mainAuthor").textContent = "✍️ موفق المغربي";
+    
+     document.getElementById("side1Img").src = news[(index+1)%news.length].img;
+     document.getElementById("side1Title").textContent = news[(index+1)%news.length].title;
+     document.getElementById("side1Link").href = news[(index+1)%news.length].link;
+     document.getElementById("side1Author").textContent = "✍️ موفق المغربي";
+    
+     document.getElementById("side2Img").src = news[(index+2)%news.length].img;
+     document.getElementById("side2Title").textContent = news[(index+2)%news.length].title;
+     document.getElementById("side2Link").href = news[(index+2)%news.length].link;
+     document.getElementById("side2Author").textContent = "✍️ موفق المغربي";
+    
+     index++;
+    }
+    rotateNews();
+    setInterval(rotateNews,5000);
+    </script>
+    
 </body>
 </html>
-
-
