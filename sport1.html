@@ -1,168 +1,186 @@
 <!DOCTYPE html>
-<html lang="ar"><html lang="ar" dir="rtl">
-
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>الكرة الأردنية.. صعود نحو القمة | المرسى</title>
 <meta name="description" content="تحليل معمق لمسيرة الكرة الأردنية بين الإنجازات والتحديات المالية والإدارية.">
-
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body{
-margin:0;
-font-family:'Cairo',sans-serif;
-background:#f4f6f8;
-direction:rtl;
-color:#333;
+    margin:0;
+    font-family:'Cairo',sans-serif;
+    background:#f4f6f8;
+    direction:rtl;
+    color:#333;
 }
 
+/* ===== HEADER ===== */
 header{
-background:#003366;
-color:#fff;
-padding:20px;
-text-align:center;
+    background:linear-gradient(90deg,#003366,#00509e);
+    color:#fff;
+    padding:20px;
+    text-align:center;
 }
-
+header a.logo{
+    color:white; /* كلمة المرسى دائمًا باللون الأبيض */
+    text-decoration:none;
+    font-size:32px;
+    font-weight:bold;
+}
+nav{
+    margin-top:10px;
+}
 nav a{
-color:#fff;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    text-decoration:underline;
 }
 
+/* ===== BREADCRUMB ===== */
 .breadcrumb{
-max-width:900px;
-margin:20px auto;
-font-size:14px;
-color:#666;
+    max-width:900px;
+    margin:20px auto;
+    font-size:14px;
+    color:#666;
 }
-
 .breadcrumb a{
-color:#003366;
-text-decoration:none;
-font-weight:600;
+    color:#003366;
+    text-decoration:none;
+    font-weight:600;
 }
 
+/* ===== MAIN ===== */
 main{
-max-width:900px;
-margin:20px auto 60px;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 8px 18px rgba(0,0,0,0.1);
+    max-width:900px;
+    margin:20px auto 60px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
 }
-
 main img{
-width:100%;
-border-radius:12px;
-margin-bottom:25px;
+    width:100%;
+    border-radius:12px;
+    margin-bottom:25px;
 }
-
 h1{
-color:#003366;
-margin-top:0;
-line-height:1.4;
+    color:#003366;
+    margin-top:0;
+    line-height:1.4;
+}
+article p{
+    line-height:1.9;
+    font-size:17px;
+    margin-bottom:22px;
+    text-align:justify;
+}
+.author{
+    font-style:italic;
+    color:#555;
+    margin-top:5px;
 }
 
-article p{
-line-height:1.9;
-font-size:17px;
-margin-bottom:22px;
-text-align:justify;
+/* ===== FOOTER ===== */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:60px;
+}
+footer nav{
+    margin-bottom:15px;
+}
+footer nav a{
+    color:#00bfff;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+footer nav a.logo{
+    color:white !important; /* كلمة المرسى دائمًا باللون الأبيض */
+}
+footer nav a:hover:not(.logo){
+    text-decoration:underline;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-<h2>⚓ المرسى</h2>
-<nav>
-<a href="index.html">الرئيسية</a>
-<a href="sports.html">الرياضة</a>
-</nav>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
 </header>
 
+<!-- ===== BREADCRUMB ===== -->
 <div class="breadcrumb">
 <a href="index.html">الرئيسية</a> ›
 <a href="sports.html">الرياضة</a> ›
 <span>الكرة الأردنية</span>
 </div>
 
+<!-- ===== MAIN ===== -->
 <main>
-
   <img src="images/sport1.jpg" alt="الكرة الأردنية وصعود نحو القمة" title="الكرة الأردنية.. صعود نحو القمة على بساط من الأزمات المالية">
 
 <h1>الكرة الأردنية.. صعود نحو القمة على بساط من الأزمات المالية</h1>
-<p style="font-style:italic; color:#555; margin-top:5px;"> موفق المغربي</p>
+<p class="author">موفق المغربي</p>
 
 <article>
-
 <p>
 بقدر ما يحمله المشهد الرياضي الأردني من بريق الإنجازات، إلا أن خلف الستار تكمن تحديات عميقة وتراكمات أثقلت كاهل الاتحاد الأردني لكرة القدم، مما جعل المسيرة نحو العالمية أشبه بالسير في حقل من الألغام الاقتصادية والإدارية. تبدأ أولى هذه العقد من الأزمة المالية الخانقة التي تحولت إلى شبح يطارد الأندية والاتحاد على حد سواء، حيث يعاني الاتحاد من فجوة كبيرة بين الطموحات العالية وبين الميزانيات المتاحة، في ظل عزوف ملحوظ للشركات الكبرى في القطاع الخاص عن تقديم رعاية حقيقية ومستدامة تليق بحجم الإنجازات القارية.
 </p>
-
 <p>
 هذا الضيق المالي انعكس بشكل مباشر على الدوري المحلي، الذي بات يعاني من ضعف المخصصات المالية للأندية، مما أدى إلى غرق معظمها في ديون تراكمية ومطالبات قضائية من اللاعبين والمدربين، وهو ما يهدد استقرار المسابقات المحلية التي تُعد المغذي الأول للمنتخبات الوطنية.
 </p>
-
 <p>
 وعلى الصعيد الإداري والتنظيمي، تبرز مشكلة جدولة المسابقات وعدم استقرار أجندة الموسم الكروي كواحدة من المعضلات التي ترهق اللاعبين والأجهزة الفنية، فالتوقفات الطويلة والمتكررة تارة بسبب معسكرات المنتخبات وأخرى لأسباب فنية، تؤدي إلى تراجع المستوى البدني والفني للاعبين وتفقد الجماهير حماس المتابعة.
 </p>
-
 <p>
 يرافق ذلك تراجع ملحوظ في البنية التحتية لبعض الملاعب الرئيسية، حيث تعاني أرضيات الملاعب والمرافق من ضغط الاستخدام المستمر وضعف عمليات الصيانة الدورية، مما يضع الاتحاد في حرج دائم عند استضافة مباريات دولية أو محاولة تطبيق معايير الاحتراف الآسيوية الصارمة.
 </p>
-
 <p>
 علاوة على ذلك، يواجه الاتحاد تحدياً يتمثل في هجرة الكفاءات والمواهب، فبسبب الأوضاع المالية الصعبة للأندية المحلية، يضطر أفضل اللاعبين للبحث عن عقود احترافية في دوريات خارجية، غالباً ما تكون في مستويات فنية متواضعة لكنها أفضل حالاً من الناحية المادية، مما يفرغ الدوري المحلي من نجومه ويضعف من قوته التسويقية والجماهيرية.
 </p>
-
 <p>
 وفي ظل هذا المشهد المعقد، يجد الاتحاد الأردني نفسه اليوم أمام اختبار حقيقي لموازنة الكفة، فبينما يطالب الجمهور بمواصلة حصد الميداليات والوصول للمونديال، تصرخ الواقعية الاقتصادية بضرورة إيجاد حلول جذرية تخرج المنظومة من دائرة تسيير الأعمال إلى دائرة الاستثمار الرياضي الحقيقي، لضمان ألا تظل الإنجازات مجرد طفرات ناتجة عن جهد فردي، بل نتاج عمل مؤسسي محصن ضد الهزات المالية والإدارية.
 </p>
-
 </article>
 
 </main>
+
+<!-- ===== FOOTER ===== -->
 <footer>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="news.html">الأخبار</a>
-      <a href="stories.html">تحقيقات وتقارير</a>
-      <a href="sports.html">الرياضة</a>
-      <a href="about.html">من نحن</a>
-      <a href="contact.html">التواصل</a>
-    </nav>
-    <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
-  </footer>
-  
-  <style>
-  footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:60px;
-  }
-  footer nav{
-    margin-bottom:15px;
-  }
-  footer nav a{
-    color:#00bfff;
-    margin:0 10px;
-    text-decoration:none;
-    font-weight:bold;
-  }
-  footer nav a:hover{
-    text-decoration:underline;
-  }
-  </style>
-  
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
+  <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
+</footer>
+
 </body>
 </html>
-
-
