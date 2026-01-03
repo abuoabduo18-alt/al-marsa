@@ -1,107 +1,148 @@
 <!DOCTYPE html>
-<html lang="ar"><html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً؟ | المرسى</title>
-
-<meta name="description" content="قصة صحفية عن رحلة المرأة الأردنية في الرياضة، من القيود الاجتماعية إلى منصات التتويج العالمية.">
-
-<meta name="keywords" content="الرياضة النسائية الأردنية, النشميات, كرة القدم النسائية, التايكوندو, المرأة الأردنية">
-
-<meta name="author" content="المرسى">
-
-<!-- Open Graph -->
-<meta property="og:title" content="خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً؟">
-<meta property="og:description" content="رحلة النشميات من صالات التدريب الصامتة إلى منصات التتويج العالمية.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="sport4.html">
-<meta property="og:image" content="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="الرياضة النسائية الأردنية">
-<meta name="twitter:description" content="كيف كسرت المرأة الأردنية المستحيل رياضياً">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1521412644187-c49fa049e84d">
+<title>خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً؟ - المرسى</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body{
-margin:0;
-font-family:'Cairo',sans-serif;
-background:#f4f6f8;
-direction:rtl;
-color:#333;
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  background:#f5f5f5;
+  color:#333;
+}
+a{
+  text-decoration:none;
+  color:#003366;
 }
 
+/* ===== HEADER ===== */
 header{
-background:#003366;
-color:#fff;
-padding:20px;
-text-align:center;
+  background:linear-gradient(90deg,#003366,#00509e);
+  color:white;
+  padding:20px;
+  text-align:center;
 }
-
+header a.logo{
+  color:white;
+  text-decoration:none;
+  font-size:32px;
+  font-weight:bold;
+}
+nav{
+  margin-top:10px;
+}
 nav a{
-color:#fff;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
+  color:white;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover{
+  text-decoration:underline;
 }
 
+/* ===== BREADCRUMB ===== */
 .breadcrumb{
-max-width:900px;
-margin:20px auto;
-font-size:14px;
-color:#666;
+  max-width:900px;
+  margin:20px auto;
+  font-size:14px;
+  color:#666;
 }
-
 .breadcrumb a{
-color:#003366;
-text-decoration:none;
-font-weight:600;
+  color:#003366;
+  text-decoration:none;
+  font-weight:600;
 }
 
+/* ===== ARTICLE ===== */
 main{
-max-width:900px;
-margin:20px auto 60px;
-background:#fff;
-padding:30px;
-border-radius:15px;
-box-shadow:0 8px 18px rgba(0,0,0,0.1);
+  max-width:800px;
+  margin:40px auto;
+  padding:0 20px;
 }
-
-main img{
-width:100%;
-border-radius:12px;
-margin-bottom:25px;
+article{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
-
-h1{
-color:#003366;
-margin-top:0;
-line-height:1.4;
+article img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:20px;
 }
-
+article h2{
+  color:#003366;
+  margin-bottom:10px;
+}
+.author{
+  font-style:italic;
+  color:#555;
+  margin-bottom:20px;
+}
 article p{
-line-height:1.9;
-font-size:17px;
-margin-bottom:22px;
-text-align:justify;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+.back-link{
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+  color:#003366;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#003366;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:60px;
+}
+footer a.logo,
+footer a.logo:visited{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:24px;
+}
+footer nav{
+  margin:15px 0;
+}
+footer nav a,
+footer nav a:visited{
+  color:#00bfff;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer nav a:hover{
+  text-decoration:underline;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-<h2>⚓ المرسى</h2>
-<nav>
-<a href="index.html">الرئيسية</a>
-<a href="sports.html">الرياضة</a>
-</nav>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
 </header>
 
 <div class="breadcrumb">
@@ -111,72 +152,50 @@ text-align:justify;
 </div>
 
 <main>
-
-  <img src="images/sport4.jpg" alt="المرأة الأردنية والرياضة" title="خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً">
-
-<h1>خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً؟</h1>
-<p style="font-style:italic; color:#555; margin-top:5px;"> موفق المغربي</p>
-
 <article>
+  <img src="images/sport4.jpg" alt="المرأة الأردنية والرياضة" title="خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً">
+  <h2>خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً؟</h2>
+  <div class="author">موفق المغربي</div>
 
-<p>
-في قلب العاصمة عمان، وتحديداً من تلك الزوايا الصامتة في صالات التدريب المزدحمة، تبدأ حكاية النشميات مع كل رباط ملاكمة يُلفّ بإحكام، وكل عرق يتصبب في سبيل معركة يومية لإثبات الذات. هذه المشاهد التي لم تعد غريبة على الشارع الأردني، تروي فصول تحول جذري في خارطة الرياضة النسائية، حيث لم يعد سقف الطموح مجرد ممارسة هواية خلف جدران مغلقة، بل اعتلاء منصات التتويج العالمية ورفع العلم الأردني عالياً
-</p>
+  <p>
+  في قلب العاصمة عمان، وتحديداً من تلك الزوايا الصامتة في صالات التدريب المزدحمة، تبدأ حكاية النشميات مع كل رباط ملاكمة يُلفّ بإحكام، وكل عرق يتصبب في سبيل معركة يومية لإثبات الذات. هذه المشاهد التي لم تعد غريبة على الشارع الأردني، تروي فصول تحول جذري في خارطة الرياضة النسائية، حيث لم يعد سقف الطموح مجرد ممارسة هواية خلف جدران مغلقة، بل اعتلاء منصات التتويج العالمية ورفع العلم الأردني عالياً.
+  </p>
 
-<p>
-لقد كانت الرحلة شاقة؛ فسنوات الطفولة الرياضية للفتيات في الأردن اصطدمت طويلاً بجدار العادات والتقاليد والنظرة المجتمعية القاصرة التي حصرت النشاط الأنثوي في أطر ضيقة، لكن هذا المستحيل بدأ يتلاشى تدريجياً حين قررت اللاعبات الأردنيات الرد بلغة الميدان والنتائج الملموسة. ولم يكن هذا التحول وليد الصدفة، بل ثمرة كفاح بطلات استثنائيات مثل جوليانا الصادق، التي حطمت القيود بتصدرها التصنيف العالمي في التايكوندو، ومنتخب السيدات لكرة القدم الذي فرض نفسه رقماً صعباً في المنطقة العربية، مما أحدث ثورة في قناعات العائلات التي باتت اليوم تتسابق لتسجيل بناتها في الأكاديميات الرياضية، إيماناً بقدرتهن على الإنجاز
-</p>
+  <p>
+  لقد كانت الرحلة شاقة؛ فسنوات الطفولة الرياضية للفتيات في الأردن اصطدمت طويلاً بجدار العادات والتقاليد والنظرة المجتمعية القاصرة التي حصرت النشاط الأنثوي في أطر ضيقة، لكن هذا المستحيل بدأ يتلاشى تدريجياً حين قررت اللاعبات الأردنيات الرد بلغة الميدان والنتائج الملموسة. ولم يكن هذا التحول وليد الصدفة، بل ثمرة كفاح بطلات استثنائيات مثل جوليانا الصادق، التي حطمت القيود بتصدرها التصنيف العالمي في التايكوندو، ومنتخب السيدات لكرة القدم الذي فرض نفسه رقماً صعباً في المنطقة العربية، مما أحدث ثورة في قناعات العائلات التي باتت اليوم تتسابق لتسجيل بناتها في الأكاديميات الرياضية، إيماناً بقدرتهن على الإنجاز.
+  </p>
 
-<p>
-ولعل المحطة الأبرز التي غيرت الموازين كانت في عام 2016، حين استضاف الأردن كأس العالم للسيدات تحت 17 سنة؛ تلك البطولة التي لم تكن مجرد حدث كروي عابر، بل مثلت هزة إيجابية للمجتمع بأسره، حيث شاهد الآباء والأمهات فتيات في مقتبل العمر يمثلن أوطانهن بكل قوة واحترافية، مما كسر الصورة النمطية وحوّل الرياضة النسائية إلى قضية فخر وطني يلتف حولها الجميع
-</p>
+  <p>
+  ولعل المحطة الأبرز التي غيرت الموازين كانت في عام 2016، حين استضاف الأردن كأس العالم للسيدات تحت 17 سنة؛ تلك البطولة التي لم تكن مجرد حدث كروي عابر، بل مثلت هزة إيجابية للمجتمع بأسره، حيث شاهد الآباء والأمهات فتيات في مقتبل العمر يمثلن أوطانهن بكل قوة واحترافية، مما كسر الصورة النمطية وحوّل الرياضة النسائية إلى قضية فخر وطني يلتف حولها الجميع.
+  </p>
 
-<p>
-ومع ذلك، فإن بريق الميداليات لا يحجب التحديات القائمة التي تواجهها النشميات بعيداً عن الأضواء، حيث لا تزال الفوارق في الأجور والدعم المادي بين رياضة الرجال والسيدات تشكل عائقاً كبيراً، وسط حاجة ماسة لالتفات القطاع الخاص لدعم هذا القطاع الواعد الذي يعتمد حالياً على ميزانيات محدودة. لكن المثير للدهشة هو أن هذه الفجوة لم تكن يوماً سبباً للتراجع، بل زادت من إصرار اللاعبات على التفوق بأقل الإمكانيات المتاحة
-</p>
+  <p>
+  ومع ذلك، فإن بريق الميداليات لا يحجب التحديات القائمة التي تواجهها النشميات بعيداً عن الأضواء، حيث لا تزال الفوارق في الأجور والدعم المادي بين رياضة الرجال والسيدات تشكل عائقاً كبيراً، وسط حاجة ماسة لالتفات القطاع الخاص لدعم هذا القطاع الواعد الذي يعتمد حالياً على ميزانيات محدودة. لكن المثير للدهشة هو أن هذه الفجوة لم تكن يوماً سبباً للتراجع، بل زادت من إصرار اللاعبات على التفوق بأقل الإمكانيات المتاحة.
+  </p>
 
-<p>
-اليوم، تتجاوز قصة المرأة الأردنية حدود المستطيل الأخضر أو حلبات القتال، لتبرز كمدربة، وحكم دولي، وإدارية تقود دفة الاتحادات الرياضية بكفاءة عالية. إنها رحلة بدأت بالرغبة في اللعب وتجسدت في صناعة هوية وطنية جديدة، لتصبح الرياضة للمرأة الأردنية هي المنصة التي أعادت من خلالها تعريف دورها في المجتمع، مؤكدة للعالم أجمع أن كلمة مستحيل قد شُطبت تماماً من قاموس النشميات
-</p>
+  <p>
+  اليوم، تتجاوز قصة المرأة الأردنية حدود المستطيل الأخضر أو حلبات القتال، لتبرز كمدربة، وحكم دولي، وإدارية تقود دفة الاتحادات الرياضية بكفاءة عالية. إنها رحلة بدأت بالرغبة في اللعب وتجسدت في صناعة هوية وطنية جديدة، لتصبح الرياضة للمرأة الأردنية هي المنصة التي أعادت من خلالها تعريف دورها في المجتمع، مؤكدة للعالم أجمع أن كلمة مستحيل قد شُطبت تماماً من قاموس النشميات.
+  </p>
 
+  <a class="back-link" href="sports.html">⬅ العودة إلى الرياضة</a>
 </article>
-
 </main>
+
+<!-- ===== FOOTER ===== -->
 <footer>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="news.html">الأخبار</a>
-      <a href="stories.html">تحقيقات وتقارير</a>
-      <a href="sports.html">الرياضة</a>
-      <a href="about.html">من نحن</a>
-      <a href="contact.html">التواصل</a>
-    </nav>
-    <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
-  </footer>
-  
-  <style>
-  footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:60px;
-  }
-  footer nav{
-    margin-bottom:15px;
-  }
-  footer nav a{
-    color:#00bfff;
-    margin:0 10px;
-    text-decoration:none;
-    font-weight:bold;
-  }
-  footer nav a:hover{
-    text-decoration:underline;
-  }
-  </style>
-  
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
+  <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
+</footer>
+
 </body>
 </html>
-
-
