@@ -1,87 +1,184 @@
 <!DOCTYPE html>
-<html lang="ar"><html lang="ar" dir="rtl">
-
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>“النشامى” يثبتون جدارتهم في كأس العرب ويبرزون قوة الكرة الأردنية - المرسى</title>
+<meta name="description" content="تقرير عن أداء المنتخب الأردني في كأس العرب وأبرز اللاعبين الشباب والخبرة الدولية.">
+
+<title>“النشامى” يثبتون جدارتهم في كأس العرب - المرسى</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-body { font-family:'Cairo',sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
-a { text-decoration:none; color:#003366; }
-header { background:#003366; color:white; padding:60px 20px; text-align:center; }
-header h1 { font-size:40px; margin-bottom:10px; }
-main { max-width:800px; margin:40px auto; padding:0 20px; }
-article { background:white; padding:25px; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.1); }
-article img { width:100%; height:auto; border-radius:12px; margin-bottom:20px; }
-article h2 { color:#003366; margin-bottom:15px; }
-article p { line-height:1.6; margin-bottom:15px; }
-.back-link { display:inline-block; margin-top:15px; font-weight:bold; }
-footer { background:#003366; color:white; text-align:center; padding:25px; margin-top:40px; }
-footer a { color:#00bfff; }
+/* ===== GLOBAL ===== */
+body{
+  font-family:'Cairo',sans-serif;
+  margin:0;
+  background:#f5f5f5;
+  color:#333;
+  line-height:1.7;
+}
+a{ 
+  text-decoration:none; 
+}
+
+/* ===== SKIP LINK ===== */
+.skip-link{
+  position:absolute;
+  top:-40px;
+  left:0;
+  background:#003366;
+  color:white;
+  padding:8px 15px;
+  z-index:100;
+}
+.skip-link:focus{
+  top:10px;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#003366;
+  color:white;
+  padding:25px 20px;
+  text-align:center;
+}
+header .logo{
+  font-size:36px;
+  font-weight:bold;
+  color:white;
+}
+header p{
+  margin:5px 0 15px;
+}
+nav a{
+  color:#00bfff;
+  margin:0 10px;
+  font-weight:bold;
+}
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* ===== MAIN ===== */
+main{
+  max-width:800px;
+  margin:40px auto;
+  padding:0 20px;
+}
+article{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+article img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+article h2{
+  color:#003366;
+}
+article p{
+  line-height:1.8;
+  margin-bottom:15px;
+}
+article time{
+  color:#666;
+  font-size:0.9em;
+}
+.back-link{
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+  color:#003366;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#003366;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:60px;
+}
+footer .logo{
+  color:white;
+  font-weight:bold;
+  font-size:24px;
+}
+footer nav a{
+  color:#00bfff;
+  margin:0 10px;
+  font-weight:bold;
+}
+footer nav a:hover{
+  text-decoration:underline;
+}
 </style>
 </head>
+
 <body>
 
+<a href="#maincontent" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
+<!-- ===== HEADER ===== -->
 <header>
-<h1>المرسى</h1>
-<p>مصدر الأخبار الموثوقة محليًا وعالميًا</p>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <p>مصدر الأخبار الموثوقة محليًا وعالميًا</p>
+  <nav aria-label="قائمة التنقل الرئيسية">
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">القصص الصحفية</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
 </header>
 
-<main>
+<!-- ===== MAIN ===== -->
+<main id="maincontent">
 <article>
-  <img src="images2/article4.jpg" alt="المنتخب الأردني">
-<h2>“النشامى” يثبتون جدارتهم في كأس العرب ويبرزون قوة الكرة الأردنية</h2>
-  <p style="font-style:italic; color:#555; margin-top:5px;"> موفق المغربي</p>
+  <img src="images2/article4.jpg" alt="المنتخب الأردني أثناء مباراة كأس العرب" loading="lazy">
 
-<p>قدّم المنتخب الأردني لكرة القدم أداءً مشرفًا في بطولة كأس العرب، عكس التطور الملحوظ للكرة الأردنية على المستويين الإقليمي والدولي، مؤكّدًا حضوره كأحد المنتخبات القادرة على المنافسة وفرض نفسها في المحافل العربية.</p>
-<p>وأظهر “النشامى” روحًا قتالية عالية وانضباطًا تكتيكيًا تحت قيادة الجهاز الفني، مع أسلوب متوازن يجمع بين الصلابة الدفاعية والفاعلية الهجومية، ما أسهم في تقديم مباريات قوية ونتائج إيجابية نالت استحسان المتابعين.</p>
-<p>وبرز خلال البطولة عدد من اللاعبين الشباب إلى جانب العناصر ذات الخبرة الدولية، ما منح المنتخب مرونة فنية وقدرة على التعامل مع مختلف مجريات المباريات، بالإضافة إلى اختبار مواهب جديدة استعدادًا للاستحقاقات المقبلة.</p>
-<p>ولم يقتصر الإنجاز على الجانب الفني، بل امتد ليشمل الدعم الجماهيري والإعلامي الذي شكّل دافعًا إضافيًا للاعبين داخل الملعب، مسهمًا في تعزيز مكانة كرة القدم الأردنية على الساحة العربية.</p>
-<p>كما ساهمت مشاركة المنتخب في تعزيز الروح الرياضية والتواصل بين المنتخبات العربية، مؤكدة الدور الإيجابي للرياضة كجسر للتقارب والتفاهم بين الشعوب.</p>
-<p>ويمكن القول إن مشاركة المنتخب الأردني في كأس العرب كانت ناجحة بكل المقاييس، من حيث الأداء والنتائج واكتساب الخبرة، ما يضع “النشامى” في مسار ثابت لترسيخ مكانتهم على الخريطة الكروية العربية وتعزيز تطور الكرة الأردنية مستقبلاً.</p>
-<a class="back-link" href="news.html">⬅ العودة إلى الأخبار</a>
+  <h2>“النشامى” يثبتون جدارتهم في كأس العرب ويبرزون قوة الكرة الأردنية</h2>
+
+  <p><strong>موفق المغربي</strong> | <time datetime="2026-01-02">2 يناير 2026</time></p>
+
+  <p>
+    قدّم المنتخب الأردني لكرة القدم أداءً مشرفًا في بطولة كأس العرب، عكس التطور الملحوظ للكرة الأردنية على المستويين الإقليمي والدولي، مؤكّدًا حضوره كأحد المنتخبات القادرة على المنافسة وفرض نفسها في المحافل العربية. وأظهر “النشامى” روحًا قتالية عالية وانضباطًا تكتيكيًا واضحًا تحت قيادة الجهاز الفني، مع أسلوب متوازن جمع بين الصلابة الدفاعية والفاعلية الهجومية، ما أسهم في تقديم مباريات قوية ونتائج إيجابية نالت استحسان المتابعين.
+  </p>
+    
+  <p>
+    وبرز خلال البطولة عدد من اللاعبين الشباب إلى جانب العناصر ذات الخبرة الدولية، الأمر الذي منح المنتخب مرونة فنية وقدرة على التعامل مع مختلف مجريات المباريات، إضافة إلى اختبار مواهب جديدة استعدادًا للاستحقاقات المقبلة. ولم يقتصر الإنجاز على الجانب الفني فقط، بل امتد ليشمل الدعم الجماهيري والإعلامي الذي شكّل دافعًا إضافيًا للاعبين داخل الملعب، وساهم في تعزيز مكانة كرة القدم الأردنية على الساحة العربية.
+  </p>
+    
+  <p>
+    وتؤكد هذه المشاركة أن المنتخب الأردني يسير بخطى ثابتة نحو ترسيخ مكانته الكروية، مستفيدًا من تراكم الخبرات وتطوير الأداء الفني، ما يفتح آفاقًا أوسع لمستقبل الكرة الأردنية في البطولات الإقليمية والدولية.
+  </p>
+  
+  <a class="back-link" href="news.html">⬅ العودة إلى الأخبار</a>
 </article>
 </main>
 
-<footer>
-&copy; 2025 جميع الحقوق محفوظة | <a href="index.html">المرسى</a>
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav aria-label="روابط الفوتر">
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">القصص الصحفية</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
+  <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
 </footer>
-<footer>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="news.html">الأخبار</a>
-      <a href="stories.html">تحقيقات وتقارير</a>
-      <a href="sports.html">الرياضة</a>
-      <a href="about.html">من نحن</a>
-      <a href="contact.html">التواصل</a>
-    </nav>
-    <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
-  </footer>
-  
-  <style>
-  footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:60px;
-  }
-  footer nav{
-    margin-bottom:15px;
-  }
-  footer nav a{
-    color:#00bfff;
-    margin:0 10px;
-    text-decoration:none;
-    font-weight:bold;
-  }
-  footer nav a:hover{
-    text-decoration:underline;
-  }
-  </style>
-  
+
 </body>
 </html>
-
-
