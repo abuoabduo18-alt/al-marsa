@@ -1,101 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar"><html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="تقرير عن أداء المنتخب الأردني في كأس العرب وأبرز اللاعبين الشباب والخبرة الدولية.">
-
-<title>“النشامى” يثبتون جدارتهم في كأس العرب - المرسى</title>
-
+<title>ثقافة الطعام في الأردن… هوية متجذّرة تعكس التاريخ والكرم والتنوّع - المرسى</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
 <style>
-/* ===== GLOBAL ===== */
-body{
-  font-family:'Cairo',sans-serif;
-  margin:0;
-  background:#f5f5f5;
-  color:#333;
-  line-height:1.7;
-}
-a{ 
-  text-decoration:none; 
-}
-
-/* ===== SKIP LINK ===== */
-.skip-link{
-  position:absolute;
-  top:-40px;
-  left:0;
-  background:#003366;
-  color:white;
-  padding:8px 15px;
-  z-index:100;
-}
-.skip-link:focus{
-  top:10px;
-}
-
-/* ===== HEADER ===== */
+body { font-family:'Cairo',sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
+header { background:#003366; color:white; padding:60px 20px; text-align:center; }/* ===== HEADER ===== */
 header{
-  background:#003366;
+  background:linear-gradient(90deg,#003366,#00509e);
   color:white;
-  padding:25px 20px;
+  padding:20px;
   text-align:center;
 }
-header .logo{
-  font-size:36px;
-  font-weight:bold;
+header a.logo{
   color:white;
+  text-decoration:none;
+  font-size:32px;
+  font-weight:bold;
 }
-header p{
-  margin:5px 0 15px;
+nav{
+  margin-top:10px;
 }
 nav a{
-  color:#00bfff;
-  margin:0 10px;
+  color:white;
+  margin:0 12px;
+  text-decoration:none;
   font-weight:bold;
 }
 nav a:hover{
   text-decoration:underline;
 }
-
-/* ===== MAIN ===== */
-main{
-  max-width:800px;
-  margin:40px auto;
-  padding:0 20px;
-}
-article{
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
-}
-article img{
-  width:100%;
-  border-radius:12px;
-  margin-bottom:20px;
-}
-article h2{
-  color:#003366;
-}
-article p{
-  line-height:1.8;
-  margin-bottom:15px;
-}
-article time{
-  color:#666;
-  font-size:0.9em;
-}
-.back-link{
-  display:inline-block;
-  margin-top:20px;
-  font-weight:bold;
-  color:#003366;
-}
-
-/* ===== FOOTER ===== */
+header h1 { font-size:36px; margin-bottom:10px; }
+main { max-width:800px; margin:40px auto; padding:0 20px; }
+article { background:white; padding:25px; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.1); }
+article img { width:100%; height:auto; border-radius:12px; margin-bottom:20px; }
+article h2 { color:#003366; margin-bottom:15px; }
+article p { line-height:1.8; margin-bottom:15px; }
+.back-link { display:inline-block; margin-top:15px; font-weight:bold; }
+footer { background:#003366; color:white; text-align:center; padding:25px; margin-top:40px; }/* ===== FOOTER ===== */
 footer{
   background:#003366;
   color:white;
@@ -103,34 +48,38 @@ footer{
   padding:30px 20px;
   margin-top:60px;
 }
-footer .logo{
+footer a.logo,
+footer a.logo:visited{
   color:white;
+  text-decoration:none;
   font-weight:bold;
   font-size:24px;
 }
-footer nav a{
+footer nav{
+  margin:15px 0;
+}
+footer nav a,
+footer nav a:visited{
   color:#00bfff;
   margin:0 10px;
+  text-decoration:none;
   font-weight:bold;
 }
 footer nav a:hover{
   text-decoration:underline;
 }
+footer a { color:#00bfff; text-decoration:none; }
 </style>
 </head>
-
 <body>
-
-<a href="#maincontent" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
 
 <!-- ===== HEADER ===== -->
 <header>
   <a href="index.html" class="logo">⚓ المرسى</a>
-  <p>مصدر الأخبار الموثوقة محليًا وعالميًا</p>
-  <nav aria-label="قائمة التنقل الرئيسية">
+  <nav>
     <a href="index.html">الرئيسية</a>
     <a href="news.html">الأخبار</a>
-    <a href="stories.html">القصص الصحفية</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
     <a href="sports.html">الرياضة</a>
     <a href="economy.html">الاقتصاد</a>
     <a href="health.html">الصحة</a>
@@ -138,39 +87,55 @@ footer nav a:hover{
     <a href="contact.html">التواصل</a>
   </nav>
 </header>
-
-<!-- ===== MAIN ===== -->
-<main id="maincontent">
+<main>
 <article>
-  <img src="images2/article4.jpg" alt="المنتخب الأردني أثناء مباراة كأس العرب" loading="lazy">
+  <img src="images3/story4.jpg" alt="ثقافة الطعام في الأردن">
+  <div class="author">موفق المغربي</div>
 
-  <h2>“النشامى” يثبتون جدارتهم في كأس العرب ويبرزون قوة الكرة الأردنية</h2>
 
-  <p><strong>موفق المغربي</strong> | <time datetime="2026-01-02">2 يناير 2026</time></p>
+<h2>ثقافة الطعام في الأردن… هوية متجذّرة تعكس التاريخ والكرم والتنوّع</h2>
 
-  <p>
-    قدّم المنتخب الأردني لكرة القدم أداءً مشرفًا في بطولة كأس العرب، عكس التطور الملحوظ للكرة الأردنية على المستويين الإقليمي والدولي، مؤكّدًا حضوره كأحد المنتخبات القادرة على المنافسة وفرض نفسها في المحافل العربية. وأظهر “النشامى” روحًا قتالية عالية وانضباطًا تكتيكيًا واضحًا تحت قيادة الجهاز الفني، مع أسلوب متوازن جمع بين الصلابة الدفاعية والفاعلية الهجومية، ما أسهم في تقديم مباريات قوية ونتائج إيجابية نالت استحسان المتابعين.
-  </p>
-    
-  <p>
-    وبرز خلال البطولة عدد من اللاعبين الشباب إلى جانب العناصر ذات الخبرة الدولية، الأمر الذي منح المنتخب مرونة فنية وقدرة على التعامل مع مختلف مجريات المباريات، إضافة إلى اختبار مواهب جديدة استعدادًا للاستحقاقات المقبلة. ولم يقتصر الإنجاز على الجانب الفني فقط، بل امتد ليشمل الدعم الجماهيري والإعلامي الذي شكّل دافعًا إضافيًا للاعبين داخل الملعب، وساهم في تعزيز مكانة كرة القدم الأردنية على الساحة العربية.
-  </p>
-    
-  <p>
-    وتؤكد هذه المشاركة أن المنتخب الأردني يسير بخطى ثابتة نحو ترسيخ مكانته الكروية، مستفيدًا من تراكم الخبرات وتطوير الأداء الفني، ما يفتح آفاقًا أوسع لمستقبل الكرة الأردنية في البطولات الإقليمية والدولية.
-  </p>
-  
-  <a class="back-link" href="news.html">⬅ العودة إلى الأخبار</a>
+<p>يُعدّ الطعام في الأردن أكثر من كونه وسيلة لإشباع الجوع، إذ يشكّل جزءًا أصيلًا من الهوية الثقافية والاجتماعية، ومرآة تعكس تنوّع الجغرافيا وتعدّد البيئات بين البادية والريف والمدينة. ومن خلال المائدة الأردنية، يمكن قراءة تاريخ المجتمع وعاداته وقيمه الراسخة، وفي مقدمتها الكرم والتكافل والاحتفاء بالضيف.</p>
+
+<p>وارتبطت الأطعمة الأردنية تقليديًا بالمناسبات الاجتماعية والدينية، مثل الأعراس والولائم والمناسبات الوطنية، حيث تتحول المائدة إلى مساحة للتلاقي وتعزيز الروابط بين الأفراد. ويُعد الكرم من أبرز القيم المرتبطة بالطعام، إذ يُقاس سخاء المضيف بوفرة المائدة وجودة ما يُقدَّم عليها.</p>
+
+<p><strong>المنسف… رمز وطني جامع</strong></p>
+
+<p>ويحتل المنسف مكانة خاصة في الثقافة الغذائية الأردنية، بوصفه الطبق الوطني الأول في المملكة. ويُحضَّر المنسف من لحم الضأن المطبوخ بلبن الجميد البلدي، ويُقدَّم مع الأرز أو الجريشة، ليجتمع حوله الأردنيون في مختلف المناسبات الكبرى.</p>
+
+<p>ولا يمثّل المنسف مجرد وجبة غذائية، بل يُعد طقسًا اجتماعيًا متكاملًا له آدابه الخاصة، مثل الأكل وقوفًا في الولائم العامة، والتشارك من صحن واحد، في تعبير واضح عن روح الجماعة والانتماء.</p>
+
+<p><strong>تنوّع الأطعمة بين المحافظات</strong></p>
+
+<p>يعكس المطبخ الأردني تنوّعًا لافتًا بين مناطق المملكة المختلفة، وفقًا لطبيعة البيئة والموارد المتاحة.</p>
+
+<p>ففي شمال الأردن، ولا سيما محافظات إربد وعجلون وجرش، تبرز الأطباق التي تعتمد على زيت الزيتون والمنتجات الزراعية، ومن أشهرها المكمورة، وهي طبق شتوي تقليدي في إربد يُحضَّر من العجين والبصل وزيت الزيتون والدجاج، إلى جانب الرشوف المعتمد على اللبن والقمح المجروش، والمجدّرة بأشكالها المتنوعة.</p>
+
+<p>أما وسط الأردن، الذي يضم عمّان والسلط ومادبا، فيجمع بين الموروثين الريفي والحضري، ومن أبرز أطباقه القدرة السلطية، والصفيحة، والمناسف الصغيرة، إضافة إلى أطباق متأثرة بالتنوّع السكاني في العاصمة عمّان، ما أوجد مطبخًا متجدّدًا يمزج بين التراث والحداثة.</p>
+
+<p>وفي جنوب الأردن، بما يشمل الكرك والطفيلة ومعان والعقبة، تطغى النكهات القوية والأطباق التي تناسب طبيعة الحياة الجبلية والبدوية، مثل المجللة، والزرب الذي يُعد من أشهر الأكلات البدوية، حيث يُطهى اللحم والخضار تحت الأرض، إضافة إلى أطباق تعتمد على السمن البلدي واللحوم المجففة.</p>
+
+<p>وفي البادية الأردنية، يعكس الطعام بساطة الحياة وقسوة البيئة، ومن أشهر الأكلات المنسف البدوي، وخبز الشراك، والهريس، والجريشة.</p>
+
+<p><strong>الحلويات والمشروبات التقليدية</strong></p>
+
+<p>ولا تقل الحلويات أهمية عن الأطباق الرئيسية في المطبخ الأردني، ومن أبرزها اللّزاقيات، والقطايف في شهر رمضان، والهريسة في بعض المناطق. أما المشروبات التقليدية، فتتصدرها القهوة العربية بوصفها رمز الضيافة الأول، إلى جانب الشاي بالمرمية أو الزعتر، والسحلب في فصل الشتاء.</p>
+
+<p>ورغم انتشار الوجبات السريعة والمطابخ العالمية، ما زال الأردنيون يحافظون على أطباقهم التراثية، خاصة في القرى والبوادي. كما شهدت السنوات الأخيرة مبادرات شبابية لإحياء المطبخ الأردني بأساليب عصرية، دون المساس بجذوره الأصيلة.</p>
+
+<p>وتعكس ثقافة الطعام في الأردن تنوّع المجتمع ووحدة هويته في آن واحد، فمن الشمال إلى الجنوب، ومن الريف إلى البادية، تتغيّر المكوّنات وتبقى القيم ثابتة: الكرم، والبساطة، والمشاركة. وهكذا تظل المائدة الأردنية سجلًا حيًا للذاكرة الشعبية، وجسرًا يصل الماضي بالحاضر، ومعبّرًا صادقًا عن روح الوطن.</p>
+
+<a class="back-link" href="stories.html">⬅ العودة إلى القصص الصحفية</a>
 </article>
 </main>
 
 <!-- ===== FOOTER ===== -->
-<footer role="contentinfo">
+<footer>
   <a href="index.html" class="logo">⚓ المرسى</a>
-  <nav aria-label="روابط الفوتر">
+  <nav>
     <a href="index.html">الرئيسية</a>
     <a href="news.html">الأخبار</a>
-    <a href="stories.html">القصص الصحفية</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
     <a href="sports.html">الرياضة</a>
     <a href="economy.html">الاقتصاد</a>
     <a href="health.html">الصحة</a>
@@ -179,6 +144,28 @@ footer nav a:hover{
   </nav>
   <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
 </footer>
-
+  
+  <style>
+  footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:60px;
+  }
+  footer nav{
+    margin-bottom:15px;
+  }
+  footer nav a{
+    color:#00bfff;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  footer nav a:hover{
+    text-decoration:underline;
+  }
+  </style>
+  
 </body>
 </html>
