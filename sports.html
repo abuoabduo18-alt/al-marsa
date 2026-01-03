@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="ar"><html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⚽ الرياضة الأردنية | المرسى</title>
-<meta name="description" content="آخر أخبار الرياضة الأردنية، الإنجازات الوطنية، والتحقيقات الرياضية والمقالات التحليلية.">
-<meta name="keywords" content="الأردن, رياضة, كرة القدم, تايكوندو, الرياضة النسائية, أخبار رياضية, مقالات رياضية">
-<meta name="author" content="المرسى">
-
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body{
     margin:0;
     font-family:'Cairo',sans-serif;
-    background:#f4f6f8;
+    background:#f5f5f5;
     color:#333;
-    direction:rtl;
 }
+a{
+    text-decoration:none;
+    color:#003366;
+}
+
+/* ===== HEADER ===== */
 header{
     background:linear-gradient(90deg,#003366,#00509e);
-    color:#fff;
+    color:white;
     padding:20px;
     text-align:center;
 }
-header h1{
-    margin:0;
-    font-size:34px;
+header a.logo{
+    color:white;
+    text-decoration:none;
+    font-size:32px;
+    font-weight:bold;
+}
+nav{
+    margin-top:10px;
 }
 nav a{
-    color:#fff;
-    margin:0 15px;
+    color:white;
+    margin:0 12px;
     text-decoration:none;
     font-weight:bold;
 }
@@ -39,6 +45,7 @@ nav a:hover{
     text-decoration:underline;
 }
 
+/* ===== MAIN ===== */
 main{
     max-width:1200px;
     margin:50px auto;
@@ -58,7 +65,7 @@ main{
 .card{
     background:white;
     border-radius:15px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
     overflow:hidden;
     transform:translateY(30px);
     opacity:0;
@@ -83,6 +90,11 @@ main{
     margin-top:0;
     color:#003366;
 }
+.author{
+    font-style:italic;
+    color:#555;
+    margin-bottom:10px;
+}
 .card-content p{
     line-height:1.6;
 }
@@ -92,6 +104,7 @@ main{
     font-weight:bold;
 }
 
+/* ===== FOOTER ===== */
 footer{
     background:#003366;
     color:white;
@@ -103,22 +116,29 @@ footer a{
     color:#00bfff;
     margin:0 10px;
     text-decoration:none;
+    font-weight:bold;
+}
+footer a:hover{
+    text-decoration:underline;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-<h1>⚓ المرسى</h1>
-<nav>
-<a href="index.html">الرئيسية</a>
-<a href="news.html">الأخبار</a>
-<a href="stories.html">تحقيقات وتقارير</a>
-<a href="sports.html">الرياضة</a>
-<a href="about.html">من نحن</a>
-<a href="contact.html">التواصل</a>
-</nav>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
 </header>
 
 <main>
@@ -129,64 +149,106 @@ footer a{
 <div class="card">
     <img src="images/sport1.jpg" alt="الكرة الأردنية وصعود نحو القمة" title="الكرة الأردنية.. صعود نحو القمة على بساط من الأزمات المالية">
     <div class="card-content">
-<h3>الكرة الأردنية.. صعود نحو القمة</h3>
-<p>تحليل معمق لمسيرة الكرة الأردنية بين الإنجازات والتحديات المالية والإدارية.</p>
-<a href="sport1.html">قراءة المقال ➜</a>
-</div>
+        <h3>الكرة الأردنية.. صعود نحو القمة</h3>
+        <div class="author">موفق المغربي</div>
+        <p>تحليل معمق لمسيرة الكرة الأردنية بين الإنجازات والتحديات المالية والإدارية.</p>
+        <a href="sport1.html">قراءة المقال ➜</a>
+    </div>
 </div>
 
 <!-- المقال 2 -->
 <div class="card">
     <img src="images/sport2.jpg" alt="جيل الذهب الأردني لكرة القدم" title="زئير النشامى: كيف أعاد جيل الذهب كتابة تاريخ الكرة الأردنية">
     <div class="card-content">
-<h3>زئير النشامى: جيل الذهب</h3>
-<p>كيف أعاد "جيل الذهب" كتابة تاريخ الكرة الأردنية.</p>
-<a href="sport2.html">قراءة المقال ➜</a>
-</div>
+        <h3>زئير النشامى: جيل الذهب</h3>
+        <div class="author">موفق المغربي</div>
+        <p>كيف أعاد "جيل الذهب" كتابة تاريخ الكرة الأردنية.</p>
+        <a href="sport2.html">قراءة المقال ➜</a>
+    </div>
 </div>
 
 <!-- المقال 3 -->
 <div class="card">
     <img src="images/sport3.jpg" alt="التايكوندو الأردنية" title="بساط الذهب: كيف أصبحت التايكوندو الأردنية سفيرة الأحلام إلى الأولمبياد">
     <div class="card-content">
-<h3>بساط الذهب: التايكوندو الأردنية</h3>
-<p>رحلة التايكوندو الأردنية من المحلية إلى العالمية والأولمبياد.</p>
-<a href="sport3.html">قراءة المقال ➜</a>
-</div>
+        <h3>بساط الذهب: التايكوندو الأردنية</h3>
+        <div class="author">موفق المغربي</div>
+        <p>رحلة التايكوندو الأردنية من المحلية إلى العالمية والأولمبياد.</p>
+        <a href="sport3.html">قراءة المقال ➜</a>
+    </div>
 </div>
 
 <!-- المقال 4 -->
 <div class="card">
     <img src="images/sport4.jpg" alt="المرأة الأردنية والرياضة" title="خارج خطوط الملعب: كيف أعادت المرأة الأردنية تعريف المستحيل رياضياً">
     <div class="card-content">
-<h3>خارج خطوط الملعب: الرياضة النسائية</h3>
-<p>كيف أعادت المرأة الأردنية تعريف "المستحيل" رياضياً.</p>
-<a href="sport4.html">قراءة المقال ➜</a>
-</div>
+        <h3>خارج خطوط الملعب: الرياضة النسائية</h3>
+        <div class="author">موفق المغربي</div>
+        <p>كيف أعادت المرأة الأردنية تعريف "المستحيل" رياضياً.</p>
+        <a href="sport4.html">قراءة المقال ➜</a>
+    </div>
 </div>
 
 <!-- المقال 5 -->
 <div class="card">
     <img src="images/sport5.jpg" alt="مونديال العرب 2025" title="مونديال العرب 2025: ملحمة لوسيل التي أعادت صياغة الهوية الكروية">
     <div class="card-content">
-<h3>مونديال العرب 2025</h3>
-<p>ملحمة "لوسيل" التي أعادت صياغة الهوية الكروية.</p>
-<a href="sport5.html">قراءة المقال ➜</a>
-</div>
+        <h3>مونديال العرب 2025</h3>
+        <div class="author">موفق المغربي</div>
+        <p>ملحمة "لوسيل" التي أعادت صياغة الهوية الكروية.</p>
+        <a href="sport5.html">قراءة المقال ➜</a>
+    </div>
 </div>
 
 </div>
 </main>
 
+<!-- ===== FOOTER الموحد ===== -->
 <footer>
-<a href="index.html">الرئيسية</a>
-<a href="news.html">الأخبار</a>
-<a href="stories.html">تحقيقات وتقارير</a>
-<a href="sports.html">الرياضة</a>
-<a href="about.html">من نحن</a>
-<a href="contact.html">التواصل</a>
-<p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
-</footer>
+    <a href="index.html" class="logo">⚓ المرسى</a>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="news.html">الأخبار</a>
+      <a href="stories.html">تقارير وتحقيقات</a>
+      <a href="sports.html">الرياضة</a>
+      <a href="economy.html">الاقتصاد</a>
+      <a href="health.html">الصحة</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html">التواصل</a>
+    </nav>
+    <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
+  </footer>
+  
+  <style>
+  footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:60px;
+  }
+  footer a.logo,
+  footer a.logo:visited{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:24px;
+  }
+  footer nav{
+    margin:15px 0;
+  }
+  footer nav a,
+  footer nav a:visited{
+    color:#00bfff;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  footer nav a:hover{
+    text-decoration:underline;
+  }
+  </style>
+  
 
 <script>
 /* انبثاق عند التمرير */
@@ -203,4 +265,3 @@ cards.forEach(card=>observer.observe(card));
 
 </body>
 </html>
-
