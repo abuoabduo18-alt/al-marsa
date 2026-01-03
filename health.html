@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قسم الصحة | المرسى</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    font-family:'Cairo',sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:linear-gradient(90deg,#003366,#00509e);
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+header a.logo{
+    color:white;
+    text-decoration:none;
+    font-size:32px;
+    font-weight:bold;
+}
+nav{
+    margin-top:10px;
+}
+nav a{
+    color:white;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ===== MAIN CONTENT ===== */
+main{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+.section-title{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:30px;
+    color:#003366;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px) scale(1.02);
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content{
+    padding:15px;
+}
+.card-content h3{
+    margin:0 0 10px;
+    color:#003366;
+}
+.card-content p{
+    line-height:1.6;
+    font-size:15px;
+}
+.card-content a{
+    display:inline-block;
+    margin-top:10px;
+    color:#00bfff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:60px;
+}
+footer a.logo,
+footer a.logo:visited{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:24px;
+}
+footer nav{
+    margin:15px 0;
+}
+footer nav a,
+footer nav a:visited{
+    color:#00bfff;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+footer nav a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+<h2 class="section-title">آخر أخبار الصحة في الأردن</h2>
+
+<div class="cards">
+
+<!-- بطاقة 1 -->
+<div class="card">
+  <img src="images4/health1.jpg" alt="مستشفى في الأردن">
+  <div class="card-content">
+    <h3>ارتفاع معدلات التطعيم ضد الإنفلونزا في الأردن</h3>
+    <p>وزارة الصحة أعلنت عن زيادة ملحوظة في نسب التطعيم الموسمية، مع حملات توعية في مختلف المحافظات.</p>
+    <p>موفق المغربي</p>
+    <a href="health1.html">دخول الخبر ➜</a>
+  </div>
+</div>
+
+<!-- بطاقة 2 -->
+<div class="card">
+  <img src="images4/health2.jpg" alt="افتتاح مركز صحي جديد في عمان">
+  <div class="card-content">
+    <h3>افتتاح مركز صحي حديث في عمان</h3>
+    <p>تم افتتاح مركز صحي جديد في العاصمة عمان يوفّر خدمات طبية متقدمة ويعمل على مدار الساعة.</p>
+    <p>موفق المغربي</p>
+    <a href="health2.html">دخول الخبر ➜</a>
+  </div>
+</div>
+
+<!-- بطاقة 3 -->
+<div class="card">
+  <img src="images4/health3.jpg" alt="حملة توعية للصحة النفسية">
+  <div class="card-content">
+    <h3>حملة توعية للصحة النفسية في المدارس</h3>
+    <p>أطلقت وزارة التربية حملة توعوية لتعزيز الصحة النفسية بين الطلاب وتقديم الدعم اللازم لهم.</p>
+    <p>موفق المغربي</p>
+    <a href="health3.html">دخول الخبر ➜</a>
+  </div>
+</div>
+
+<!-- بطاقة 4 -->
+<div class="card">
+  <img src="images4/health4.jpg" alt="إحصاءات جديدة عن أمراض القلب">
+  <div class="card-content">
+    <h3>إحصاءات حديثة تُظهر ارتفاع أمراض القلب</h3>
+    <p>أظهرت إحصاءات جديدة ارتفاعًا في حالات الإصابة بأمراض القلب، ما دعا الجهات الصحية لإطلاق برامج وقائية.</p>
+    <p>موفق المغربي</p>
+    <a href="health4.html">دخول الخبر ➜</a>
+  </div>
+</div>
+
+<!-- بطاقة 5 -->
+<div class="card">
+  <img src="images4/health5.jpg" alt="نصائح غذائية للمواطنين">
+  <div class="card-content">
+    <h3>دليل نصائح غذائية لتعزيز المناعة</h3>
+    <p>أطلقت جمعية التغذية الأردنية دليلًا جديدًا لنمط غذائي صحي يساعد في تعزيز المناعة ومقاومة الأمراض.</p>
+    <p>موفق المغربي</p>
+    <a href="health5.html">دخول الخبر ➜</a>
+  </div>
+</div>
+
+</div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <a href="index.html" class="logo">⚓ المرسى</a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a>
+    <a href="health.html">الصحة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+  </nav>
+  <p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
