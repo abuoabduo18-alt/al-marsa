@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,234 +11,94 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-    margin:0;
-    font-family:'Cairo',sans-serif;
-    background:#f4f6f8;
-    color:#333;
-    direction:rtl;
-}
-
-/* ===== HEADER ===== */
-header{
-    background:linear-gradient(90deg,#003366,#00509e);
-    color:#fff;
-    padding:20px;
-    text-align:center;
-}
-header h1{
-    margin:0;
-    font-size:34px;
-}
-nav{
-    margin-top:10px;
-}
-nav a{
-    color:#fff;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-    position:relative;
-}
-nav a::after{
-    content:''; 
-    position:absolute;
-    bottom:-5px;
-    left:0;
-    width:0;
-    height:2px;
-    background:#00bfff;
-    transition:.3s;
-}
-nav a:hover::after{
-    width:100%;
-}
-
-/* ===== HERO ===== */
-.hero{
-    background:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c') center/cover no-repeat;
-    position:relative;
-    color:white;
-    padding:90px 20px;
-    text-align:center;
-}
-.hero::after{
-    content:''; 
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.5);
-}
-.hero-content{
-    position:relative;
-    z-index:1;
-}
-.hero h2{
-    font-size:46px;
-    margin-bottom:15px;
-}
-.hero p{
-    font-size:20px;
-    margin-bottom:30px;
-}
-.hero input{
-    padding:12px;
-    width:280px;
-    border:none;
-    border-radius:8px 0 0 8px;
-}
-.hero button{
-    padding:12px 18px;
-    border:none;
-    background:#00bfff;
-    color:white;
-    font-weight:bold;
-    border-radius:0 8px 8px 0;
-    cursor:pointer;
-}
-
-/* ===== URGENT NEWS BANNER ===== */
-#breaking-news{
-    background:#ff4d4d;
-    color:white;
-    overflow:hidden;
-    padding:10px 0;
-    margin:30px 0;
-}
-#breaking-news p{
-    display:inline-block;
-    white-space:nowrap;
-    animation:scrollNews 15s linear infinite;
-    font-weight:bold;
-    font-size:18px;
-}
-@keyframes scrollNews{
-    0%{ transform:translateX(100%); }
-    100%{ transform:translateX(-100%); }
-}
-
-/* ===== SECTIONS ===== */
-main{
-    max-width:1200px;
-    margin:50px auto;
-    padding:0 20px;
-}
-.section-title{
-    text-align:center;
-    font-size:30px;
-    margin-bottom:35px;
-    color:#003366;
-}
-
-/* ===== CARDS ===== */
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-.card{
-    background:white;
-    border-radius:15px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.1);
-    overflow:hidden;
-    transform:translateY(30px);
-    opacity:0;
-    transition:.6s;
-}
-.card.show{
-    opacity:1;
-    transform:translateY(0);
-}
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
-}
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-.card-content{
-    padding:20px;
-}
-.card-content h3{
-    margin-top:0;
-    color:#003366;
-}
-.card-content p{
-    line-height:1.6;
-}
-.card-content a{
-    text-decoration:none;
-    color:#00bfff;
-    font-weight:bold;
-}
-
-/* ===== FOOTER ===== */
-footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:60px;
-}
-footer a{
-    color:#00bfff;
-    margin:0 10px;
-    text-decoration:none;
-}
-/* ===== NEW: remaining news ===== */
-.more-news{
-    margin-top:40px;
-}
-.more-news h3{
-    color:#003366;
-    margin-bottom:20px;
-}
-.more-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
+/* ==== CSS ==== */
+body{margin:0;font-family:'Cairo',sans-serif;background:#f4f6f8;color:#333;direction:rtl;}
+header{background:linear-gradient(90deg,#003366,#00509e);color:#fff;padding:20px;text-align:center;}
+header h1{margin:0;font-size:34px;}
+nav{margin-top:10px;}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold;position:relative;}
+nav a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:#00bfff;transition:.3s;}
+nav a:hover::after{width:100%;}
+.hero{background:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c') center/cover no-repeat;position:relative;color:white;padding:90px 20px;text-align:center;}
+.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.5);}
+.hero-content{position:relative;z-index:1;}
+.hero h2{font-size:46px;margin-bottom:15px;}
+.hero p{font-size:20px;margin-bottom:30px;}
+.hero input{padding:12px;width:280px;border:none;border-radius:8px 0 0 8px;}
+.hero button{padding:12px 18px;border:none;background:#00bfff;color:white;font-weight:bold;border-radius:0 8px 8px 0;cursor:pointer;}
+#breaking-news{background:#ff4d4d;color:white;overflow:hidden;padding:10px 0;margin:30px 0;}
+#breaking-news p{display:inline-block;white-space:nowrap;animation:scrollNews 15s linear infinite;font-weight:bold;font-size:18px;}
+@keyframes scrollNews{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+main{max-width:1200px;margin:50px auto;padding:0 20px;}
+.section-title{text-align:center;font-size:30px;margin-bottom:35px;color:#003366;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:white;border-radius:15px;box-shadow:0 8px 18px rgba(0,0,0,0.1);overflow:hidden;transform:translateY(30px);opacity:0;transition:.6s;}
+.card.show{opacity:1;transform:translateY(0);}
+.card:hover{transform:translateY(-10px) scale(1.03);}
+.card img{width:100%;height:180px;object-fit:cover;}
+.card-content{padding:20px;}
+.card-content h3{margin-top:0;color:#003366;}
+.card-content p{line-height:1.6;}
+.card-content a{text-decoration:none;color:#00bfff;font-weight:bold;}
+footer{background:#003366;color:white;text-align:center;padding:30px 20px;margin-top:60px;}
+footer a{color:#00bfff;margin:0 10px;text-decoration:none;}
+.more-news{margin-top:40px;}
+.more-news h3{color:#003366;margin-bottom:20px;}
+.more-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.featured-news{margin-bottom:60px;}
+.featured-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:20px;}
+.featured-main,.featured-side{position:relative;border-radius:15px;overflow:hidden;}
+.featured-grid img{width:100%;height:100%;object-fit:cover;}
+.featured-text{position:absolute;bottom:0;inset-inline:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);color:white;padding:20px;}
+.featured-text h3,.featured-text h4{margin:0 0 8px;}
+.featured-text span{font-size:14px;opacity:.9;}
+#ticker a{color:white;text-decoration:none;margin:0 20px;}
+#ticker a:hover{text-decoration:underline;}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>⚓ المرسى</h1>
-<!-- التاريخ والوقت -->
-<div id="currentDateTime" style="margin-top:10px; font-size:16px; color:white;"></div>
-<nav>
-<a href="index.html">الرئيسية</a>
-<a href="news.html">الأخبار</a>
-<a href="stories.html">تحقيقات وتقارير</a>
-<a href="sports.html">الرياضة</a>
-<a href="about.html">من نحن</a>
-<a href="contact.html">التواصل</a>
-</nav>
-</header>
+    <header>
+        <a href="index.html" style="text-decoration:none; color:white;">
+          <h1>⚓ المرسى</h1>
+        </a>
+        <!-- التاريخ والوقت -->
+        <div id="currentDateTime" style="margin-top:10px; font-size:16px; color:white;"></div>
+        <nav>
+          <a href="index.html">الرئيسية</a>
+          <a href="news.html">الأخبار</a>
+          <a href="stories.html">تقارير وتحقيقات</a>
+          <a href="sports.html">الرياضة</a>
+          <a href="economy.html">الاقتصاد</a>
+          <a href="health.html">الصحة</a>
+          <a href="about.html">من نحن</a>
+          <a href="contact.html">التواصل</a>
+        </nav>
+      </header>
+      
 
 <section class="hero">
 <div class="hero-content">
-<h2>⚓ أهلاً بك في المرسى</h2>
+    <h2><a href="index.html" style="color:white; text-decoration:none;">⚓ أهلاً بك في المرسى</a></h2>
+
 <p>حيث ترسو الحقيقة</p>
 <input type="text" id="searchInput" placeholder="🔍 ابحث عن قسم...">
 <button>بحث</button>
 </div>
 </section>
 
-<!-- شريط آخر الأخبار -->
 <section id="news-ticker" style="background:#003366; color:white; padding:10px 0; overflow:hidden;">
-    <div style="font-weight:bold; padding:0 15px; margin-bottom:5px;">📰 آخر الأخبار:</div>
-    <div id="ticker" style="display:inline-block; white-space:nowrap;">
-      <a href="article1.html">الأردن يستعد لتعداد سكاني شامل عام 2026</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article2.html">الأردن يحتضن أول سباق دراغ ريس رسمي</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article3.html">الأردن يتصدر السياحة العلاجية في المنطقة</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article4.html">النشامى يثبتون جدارتهم في كأس العرب</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article5.html">أم الجمال تشق طريقها إلى العالمية</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article6.html">مبادرة سبيل مدينة معان</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="article7.html">أم غازي تحوّل المعجنات التراثية لنجاح</a>
-    </div>
+<div style="font-weight:bold; padding:0 15px; margin-bottom:5px;"> آخر الأخبار:</div>
+<div id="ticker" style="display:inline-block; white-space:nowrap;">
+<a href="article1.html">الأردن يستعد لتعداد سكاني شامل عام 2026</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article2.html">الأردن يحتضن أول سباق دراغ ريس رسمي</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article3.html">الأردن يتصدر السياحة العلاجية في المنطقة</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article4.html">النشامى يثبتون جدارتهم في كأس العرب</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article5.html">أم الجمال تشق طريقها إلى العالمية</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article6.html">مبادرة سبيل مدينة معان</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="article7.html">أم غازي تحوّل المعجنات التراثية لنجاح</a>
+</div>
 </section>
 
 <script>
@@ -254,193 +113,168 @@ function moveTicker(){
 moveTicker();
 </script>
 
-<style>
-#ticker a {
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-}
-#ticker a:hover {
-    text-decoration:underline;
-}
-/* ===== NEW: FEATURED NEWS ===== */
-.featured-news{
-    margin-bottom:60px;
-}
-.featured-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    grid-template-rows:1fr 1fr;
-    gap:20px;
-}
-.featured-main,
-.featured-side{
-    position:relative;
-    border-radius:15px;
-    overflow:hidden;
-}
-.featured-grid img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-.featured-text{
-    position:absolute;
-    bottom:0;
-    inset-inline:0;
-    background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
-    color:white;
-    padding:20px;
-}
-.featured-text h3,
-.featured-text h4{
-    margin:0 0 8px;
-}
-.featured-text span{
-    font-size:14px;
-    opacity:.9;
-}
-
-</style>
-
 <main>
-    <section class="featured-news">
-        <h2 class="section-title">📰 أبرز الأخبار</h2>
-        
-        <div class="featured-grid">
-        <a id="mainLink" class="featured-main">
-            <img id="mainImg">
-            <div class="featured-text">
-                <h3 id="mainTitle"></h3>
-                <span id="mainAuthor"></span>
-            </div>
-        </a>
-        
-        <a id="side1Link" class="featured-side">
-            <img id="side1Img">
-            <div class="featured-text">
-                <h4 id="side1Title"></h4>
-                <span id="side1Author"></span>
-            </div>
-        </a>
-        
-        <a id="side2Link" class="featured-side">
-            <img id="side2Img">
-            <div class="featured-text">
-                <h4 id="side2Title"></h4>
-                <span id="side2Author"></span>
-            </div>
-        </a>
-        </div>
-        </section>
-        <section class="more-news">
-            <h3>🗞️ آخر الأخبار</h3>
-            
-            <div class="more-grid">
-            
-            <div class="card">
-            <img src="images2/article4.jpg">
-            <div class="card-content">
-            <h3>النشامى يثبتون جدارتهم في كأس العرب</h3>
-            <p>المنتخب الأردني يحقق نتائج مميزة.</p>
-            <p style="font-style:italic;color:#555;">موفق المغربي</p>
-            <a href="article4.html">قراءة الخبر ➜</a>
-            </div>
-            </div>
-            
-            <div class="card">
-            <img src="images2/article5.jpg">
-            <div class="card-content">
-            <h3>أم الجمال تشق طريقها إلى العالمية</h3>
-            <p>مشاريع محلية ناجحة تجذب الانتباه.</p>
-            <p style="font-style:italic;color:#555;">موفق المغربي</p>
-            <a href="article5.html">قراءة الخبر ➜</a>
-            </div>
-            </div>
-            
-            <div class="card">
-            <img src="images2/article6.jpg">
-            <div class="card-content">
-            <h3>مبادرة سبيل مدينة معان</h3>
-            <p>مبادرة شبابية تخدم المجتمع المحلي.</p>
-            <p style="font-style:italic;color:#555;">موفق المغربي</p>
-            <a href="article6.html">قراءة الخبر ➜</a>
-            </div>
-            </div>
-            
-            <div class="card">
-            <img src="images2/article7.jpg">
-            <div class="card-content">
-            <h3>أم غازي تحوّل المعجنات التراثية لنجاح</h3>
-            <p>قصة نجاح ملهمة من التراث.</p>
-            <p style="font-style:italic;color:#555;">موفق المغربي</p>
-            <a href="article7.html">قراءة الخبر ➜</a>
-            </div>
-            </div>
-            
-            </div>
-            </section>
-                    
-    
-   
-<h2 class="section-title">📌 أقسام الموقع</h2>
+<section class="featured-news">
+<h2 class="section-title"> أبرز الأخبار</h2>
+<div class="featured-grid">
+
+<a id="mainLink" class="featured-main">
+<img id="mainImg">
+<div class="featured-text">
+<h3 id="mainTitle"></h3>
+<span id="mainAuthor"></span>
+</div>
+</a>
+
+<a id="side1Link" class="featured-side">
+<img id="side1Img">
+<div class="featured-text">
+<h4 id="side1Title"></h4>
+<span id="side1Author"></span>
+</div>
+</a>
+
+<a id="side2Link" class="featured-side">
+<img id="side2Img">
+<div class="featured-text">
+<h4 id="side2Title"></h4>
+<span id="side2Author"></span>
+</div>
+</a>
+
+<a id="side3Link" class="featured-side">
+<img id="side3Img">
+<div class="featured-text">
+<h4 id="side3Title"></h4>
+<span id="side3Author"></span>
+</div>
+</a>
+
+</div>
+</section>
+
+<section class="more-news">
+<h3> آخر الأخبار</h3>
+<div class="more-grid">
+
+<div class="card">
+<img src="images2/article4.jpg">
+<div class="card-content">
+<h3>النشامى يثبتون جدارتهم في كأس العرب</h3>
+<p>المنتخب الأردني يحقق نتائج مميزة.</p>
+<p style="font-style:italic;color:#555;">موفق المغربي</p>
+<a href="article4.html">قراءة الخبر ➜</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images2/article5.jpg">
+<div class="card-content">
+<h3>أم الجمال تشق طريقها إلى العالمية</h3>
+<p>مشاريع محلية ناجحة تجذب الانتباه.</p>
+<p style="font-style:italic;color:#555;">موفق المغربي</p>
+<a href="article5.html">قراءة الخبر ➜</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images2/article6.jpg">
+<div class="card-content">
+<h3>مبادرة سبيل مدينة معان</h3>
+<p>مبادرة شبابية تخدم المجتمع المحلي.</p>
+<p style="font-style:italic;color:#555;">موفق المغربي</p>
+<a href="article6.html">قراءة الخبر ➜</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images2/article7.jpg">
+<div class="card-content">
+<h3>أم غازي تحوّل المعجنات التراثية لنجاح</h3>
+<p>قصة نجاح ملهمة من التراث.</p>
+<p style="font-style:italic;color:#555;">موفق المغربي</p>
+<a href="article7.html">قراءة الخبر ➜</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ======= أقسام الموقع ======= -->
+<h2 class="section-title" style="text-align:right;">الأقسام</h2>
+
 <div class="cards">
 
 <!-- الأخبار -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3" alt="الأخبار">
 <div class="card-content">
-<h3>📰 الأخبار</h3>
-<p>آخر الأخبار المحلية والعربية والعالمية.</p>
+<h3> الأخبار</h3>
+<p>آخر الأخبار.</p>
 <a href="news.html">دخول القسم ➜</a>
 </div>
 </div>
 
-<!-- تحقيقات وتقارير -->
+<!-- تقارير وتحقيقات -->
 <div class="card">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="تحقيقات وتقارير">
-    <div class="card-content">
-    <h3>📋 تحقيقات وتقارير</h3>
-    <p>تحقيقات وتقارير صحفية مفصلة من الميدان.</p>
-    <a href="stories.html">دخول القسم ➜</a>
-    </div>
-    </div>
-    
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="تحقيقات وتقارير">
+<div class="card-content">
+<h3> تقارير وتحقيقات</h3>
+<p>تقارير وتحقيقات صحفية مفصلة من الميدان.</p>
+<a href="stories.html">دخول القسم ➜</a>
+</div>
+</div>
 
 <!-- الرياضة -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="الرياضة الأردنية">
 <div class="card-content">
-<h3>⚽ الرياضة</h3>
+<h3> الرياضة</h3>
 <p>آخر الأخبار الرياضية والإنجازات الأردنية.</p>
 <a href="sports.html">دخول القسم ➜</a>
 </div>
 </div>
+
+<!-- الاقتصاد -->
+<div class="card">
+  <img src="images5/economy1.jpg"alt="الاقتصاد">
+  <div class="card-content">
+<h3> الاقتصاد</h3>
+<p>آخر الأخبار الاقتصادية وتحليلات السوق.</p>
+<a href="economy.html">دخول القسم ➜</a>
+</div>
+</div>
+
+<!-- الصحة -->
+<div class="card">
+  <img <img src="images4/health4.jpg" alt="الصحة">
+<div class="card-content">
+<h3> الصحة</h3>
+<p>أحدث الأخبار والمقالات الصحية.</p>
+<a href="health.html">دخول القسم ➜</a>
+</div>
+</div>
+
 </div>
 
 </main>
 
+<!-- ======= الفوتر ======= -->
 <footer>
-<a href="index.html">الرئيسية</a>
-<a href="news.html">الأخبار</a>
-<a href="stories.html">القصص الصحفية</a>
-<a href="sports.html">الرياضة</a>
-<a href="about.html">من نحن</a>
-<a href="contact.html">التواصل</a>
-<p>© 2025 ⚓ المرسى | جميع الحقوق محفوظة</p>
-</footer>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="stories.html">تقارير وتحقيقات</a>
+    <a href="sports.html">الرياضة</a>
+    <a href="economy.html">الاقتصاد</a> <!-- القسم الجديد -->
+    <a href="health.html">الصحة</a> <!-- القسم الجديد -->
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">التواصل</a>
+    <p>© 2025 <a href="index.html" style="color:#00bfff; text-decoration:none;">⚓ المرسى</a> | جميع الحقوق محفوظة</p>
+
+    </footer>
+    
 
 <script>
-const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-},{threshold:0.2});
-cards.forEach(card=>observer.observe(card));
-
 // تحديث التاريخ والوقت
 function updateDateTime() {
     const now = new Date();
@@ -458,41 +292,186 @@ function updateDateTime() {
 setInterval(updateDateTime,1000);
 updateDateTime();
 
+// انيميشن البطاقات
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{threshold:0.2});
+cards.forEach(card=>observer.observe(card));
+
+// بيانات الأخبار
+const newsData = [
+ {title:"الأردن يستعد لتعداد سكاني شامل عام 2026", img:"images2/article1.jpg", link:"article1.html", author:"موفق المغربي", date:"2025-01-10"},
+ {title:"الأردن يحتضن أول سباق دراغ ريس رسمي", img:"images2/article2.jpg", link:"article2.html", author:"موفق المغربي", date:"2025-01-09"},
+ {title:"الأردن يتصدر السياحة العلاجية في المنطقة", img:"images2/article3.jpg", link:"article3.html", author:"موفق المغربي", date:"2025-01-08"},
+ {title:"النشامى يثبتون جدارتهم في كأس العرب", img:"images2/article4.jpg", link:"article4.html", author:"موفق المغربي", date:"2025-01-07"},
+ {title:"أم الجمال تشق طريقها إلى العالمية", img:"images2/article5.jpg", link:"article5.html", author:"موفق المغربي", date:"2025-01-06"},
+ {title:"مبادرة سبيل مدينة معان", img:"images2/article6.jpg", link:"article6.html", author:"موفق المغربي", date:"2025-01-05"},
+ {title:"أم غازي تحوّل المعجنات التراثية لنجاح", img:"images2/article7.jpg", link:"article7.html", author:"موفق المغربي", date:"2025-01-04"}
+];
+
+// ترتيب حسب الأحدث
+newsData.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+let featuredIndex = 0;
+function updateFeatured(){
+ const main  = newsData[featuredIndex % newsData.length];
+ const side1 = newsData[(featuredIndex+1) % newsData.length];
+ const side2 = newsData[(featuredIndex+2) % newsData.length];
+ const side3 = newsData[(featuredIndex+3) % newsData.length];
+
+ document.getElementById("mainImg").src = main.img;
+ document.getElementById("mainTitle").textContent = main.title;
+ document.getElementById("mainLink").href = main.link;
+ document.getElementById("mainAuthor").textContent = "✍️ " + main.author;
+
+ document.getElementById("side1Img").src = side1.img;
+ document.getElementById("side1Title").textContent = side1.title;
+ document.getElementById("side1Link").href = side1.link;
+ document.getElementById("side1Author").textContent = "✍️ " + side1.author;
+
+ document.getElementById("side2Img").src = side2.img;
+ document.getElementById("side2Title").textContent = side2.title;
+ document.getElementById("side2Link").href = side2.link;
+ document.getElementById("side2Author").textContent = "✍️ " + side2.author;
+
+ document.getElementById("side3Img").src = side3.img;
+ document.getElementById("side3Title").textContent = side3.title;
+ document.getElementById("side3Link").href = side3.link;
+ document.getElementById("side3Author").textContent = "✍️ " + side3.author;
+
+ featuredIndex++;
+}
+updateFeatured();
+setInterval(updateFeatured,10000);
+
+// عرض آخر الأخبار في القسم
+const moreNewsDiv = document.getElementById("moreNews");
+newsData.slice(3).forEach(news=>{
+ moreNewsDiv.innerHTML += `
+ <div class="card">
+  <img src="${news.img}">
+  <div class="card-content">
+   <h3>${news.title}</h3>
+   <p>${news.desc || ""}</p>
+   <p style="font-style:italic;color:#555;">${news.author}</p>
+   <a href="${news.link}">قراءة الخبر الكامل ➜</a>
+  </div>
+ </div>
+ `;
+});
 </script>
 <script>
-    const news = [
-     {title:"الأردن يستعد لتعداد سكاني شامل عام 2026", img:"images2/article1.jpg", link:"article1.html"},
-     {title:"الأردن يحتضن أول سباق دراغ ريس رسمي", img:"images2/article2.jpg", link:"article2.html"},
-     {title:"الأردن يتصدر السياحة العلاجية في المنطقة", img:"images2/article3.jpg", link:"article3.html"},
-     {title:"النشامى يثبتون جدارتهم في كأس العرب", img:"images2/article4.jpg", link:"article4.html"},
-     {title:"أم الجمال تشق طريقها إلى العالمية", img:"images2/article5.jpg", link:"article5.html"},
-     {title:"مبادرة سبيل مدينة معان", img:"images2/article6.jpg", link:"article6.html"},
-     {title:"أم غازي تحوّل المعجنات التراثية لنجاح", img:"images2/article7.jpg", link:"article7.html"}
-    ];
-    
-    let index = 0;
-    
-    function rotateNews(){
-     document.getElementById("mainImg").src = news[index % news.length].img;
-     document.getElementById("mainTitle").textContent = news[index % news.length].title;
-     document.getElementById("mainLink").href = news[index % news.length].link;
-     document.getElementById("mainAuthor").textContent = "✍️ موفق المغربي";
-    
-     document.getElementById("side1Img").src = news[(index+1)%news.length].img;
-     document.getElementById("side1Title").textContent = news[(index+1)%news.length].title;
-     document.getElementById("side1Link").href = news[(index+1)%news.length].link;
-     document.getElementById("side1Author").textContent = "✍️ موفق المغربي";
-    
-     document.getElementById("side2Img").src = news[(index+2)%news.length].img;
-     document.getElementById("side2Title").textContent = news[(index+2)%news.length].title;
-     document.getElementById("side2Link").href = news[(index+2)%news.length].link;
-     document.getElementById("side2Author").textContent = "✍️ موفق المغربي";
-    
-     index++;
+  // ======== بيانات الأقسام والأخبار ========
+  const sectionsData = [
+    {name:"الأخبار", link:"news.html"},
+    {name:"تقارير وتحقيقات", link:"stories.html"},
+    {name:"الرياضة", link:"sports.html"},
+    {name:"الاقتصاد", link:"economy.html"},
+    {name:"الصحة", link:"health.html"},
+    {name:"من نحن", link:"about.html"},
+    {name:"التواصل", link:"contact.html"}
+  ];
+  
+  // دمج الأقسام والأخبار للبحث
+  const searchItems = [
+    ...sectionsData.map(s => ({name: s.name, link: s.link})),
+    ...newsData.map(n => ({name: n.title, link: n.link}))
+  ];
+  
+  // ======== عناصر البحث ========
+  const searchInput = document.getElementById("searchInput");
+  const searchButton = document.querySelector(".hero button");
+  
+  // إنشاء عنصر الاقتراحات إذا لم يكن موجودًا
+  let searchSuggestions = document.getElementById("searchSuggestions");
+  if(!searchSuggestions){
+    searchSuggestions = document.createElement("ul");
+    searchSuggestions.id = "searchSuggestions";
+    searchSuggestions.style.cssText = `
+      position:absolute;
+      background:white;
+      color:#333;
+      list-style:none;
+      margin:5px 0 0 0;
+      padding:0;
+      width:280px;
+      border-radius:8px;
+      max-height:200px;
+      overflow-y:auto;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      display:none;
+      z-index:10;
+    `;
+    searchInput.parentElement.appendChild(searchSuggestions);
+  }
+  
+  // ======== دالة البحث ========
+  function searchSite(query){
+    query = query || searchInput.value.trim();
+    if(!query) return;
+  
+    const section = sectionsData.find(s => s.name.includes(query));
+    if(section){ window.location.href = section.link; return; }
+  
+    const news = newsData.find(n => n.title.includes(query));
+    if(news){ window.location.href = news.link; return; }
+  
+    alert("عذراً، لم يتم العثور على أي نتائج مطابقة.");
+  }
+  
+  // ======== تحديث الاقتراحات ========
+  searchInput.addEventListener("input", function(){
+    const query = this.value.trim();
+    searchSuggestions.innerHTML = "";
+  
+    if(!query){ searchSuggestions.style.display = "none"; return; }
+  
+    const matches = searchItems.filter(item => item.name.includes(query));
+  
+    if(matches.length === 0){ searchSuggestions.style.display = "none"; return; }
+  
+    matches.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item.name;
+      li.style.padding = "8px 12px";
+      li.style.cursor = "pointer";
+  
+      li.addEventListener("mouseover", () => li.style.background = "#f0f0f0");
+      li.addEventListener("mouseout", () => li.style.background = "white");
+  
+      li.addEventListener("click", () => {
+        window.location.href = item.link;
+      });
+  
+      searchSuggestions.appendChild(li);
+    });
+  
+    searchSuggestions.style.display = "block";
+  });
+  
+  // ======== البحث بزر البحث ========
+  searchButton.addEventListener("click", () => searchSite());
+  
+  // ======== البحث بالضغط على Enter ========
+  searchInput.addEventListener("keyup", function(e){
+    if(e.key === "Enter"){
+      searchSite();
     }
-    rotateNews();
-    setInterval(rotateNews,5000);
-    </script>
-    
+  });
+  
+  // ======== إخفاء الاقتراحات عند الضغط خارج الحقل ========
+  document.addEventListener("click", function(e){
+    if(!searchInput.contains(e.target) && !searchSuggestions.contains(e.target)){
+      searchSuggestions.style.display = "none";
+    }
+  });
+  </script>
+  
+
 </body>
 </html>
